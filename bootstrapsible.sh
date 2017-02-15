@@ -3,7 +3,7 @@
 echo bootstrapsible
 mkdir -p ~/git
 cd ~/git
-git clone https://github.com/ansible/ansible.git
+git clone --depth 1 https://github.com/ansible/ansible.git
 cd ansible
 git pull
 git submodule update --init --recursive
